@@ -1,0 +1,598 @@
+/*
+  ========================================
+  Import online font
+  ========================================
+  http://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file
+*/
+@import url(https://fontlibrary.org/face/glacial-indifference);
+
+/*
+  ========================================
+  Reset styling settings
+  ========================================
+  http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+
+/*
+  ========================================
+  Settings of general page elements
+  ========================================
+*/
+
+html, body {
+    width: 100%;
+    height: 100%;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+	font-size: 18px;
+	font-family: 'GlacialIndifferenceRegular', sans-serif;
+	color: #4c4137;
+	background-color: #fffbf8; /*#ffdab9;*/
+}
+
+header {
+	display: block;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #4c4137;
+	background-image: url("pics/background2.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding-bottom: 15px;
+}
+
+h1 { 
+	font-style: normal;
+	font-size: 3.5em;
+	font-weight: lighter;
+	margin-top: -10px;
+}
+
+/*Logo top image*/
+#logo {
+    margin-top: 10px;
+	width: 150px;
+	height: auto;
+	transform: rotate(2.5deg);
+	border-radius: 50%;
+	border: 0.5px #4c4137 solid;
+}
+
+sup, sub { 
+    font-size: 0.7em;	
+}
+
+div {
+	display: flex;
+	vertical-align: none;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.references {
+	display: block;
+	width: 1210px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+section.article {
+	width: 370px;
+	margin-right: 20px;
+}
+
+section.intro_article {
+	list-style: none;
+	width: 1210px;
+	margin-top: 5px;
+	justify-content: center;
+}
+
+p {
+	font-style: normal;
+	font-size: 100%;
+	margin-bottom: 8px;
+	text-align: justify;
+}
+
+p.title {
+	margin-top: 0;
+}
+
+.line_top {
+	width: 1210px;
+    margin-top: 10px;
+	margin-bottom: 10px;
+	height: 1.5px;
+    background: #ffdab9; /*#b6966c;*/
+}
+
+.line_bottom {
+	width: 1210px;
+    margin-top: 10px;
+	margin-bottom: 15px;
+	height: 1.5px;
+    background: #ffdab9; /*#b6966c;*/
+}
+
+footer {
+	margin-top: 15px;
+	padding-left: 10px;
+	background-color: #ffdab9;
+	justify-content: auto;
+	font-size: 75%;
+	font-weight: lighter;
+} 
+
+/*
+  ========================================
+  Settings of Map elements
+  ========================================
+*/
+
+#map {
+    width: 1210px;
+    height: 700px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*
+  ========================================
+  Quoting references
+  ========================================
+*/
+h6 {
+	justify-content: auto;
+	font-size: 75%;
+	font-weight: lighter;
+}
+
+a.text_link:link, a.text_link:visited {
+	width: 1210px;
+	padding: 0;
+	margin-bottom: 0;
+	color: #4c4137;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+a.text_link:hover {
+    color: inherit;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.pic_link:link, a.pic_link:visited {
+	width: 820px;
+	padding: 0;
+	margin-bottom: 20px;
+	color: #4c4137;
+	text-align: center;
+}
+
+a.pic_link:hover {
+	color: inherit;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.chart_desc {
+	width: 400px;
+	font-size: 55%;
+	margin-top: -10px;
+	text-align: center;
+}
+
+/*
+  ========================================
+  Images and media
+  ========================================
+*/
+
+/*Image general*/
+img {
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.photo {
+	width: 820px;
+	height: auto;
+}
+
+.charts {
+	width: 560px;
+	height:auto;
+	margin-top: 20px;
+}
+
+iframe {
+	width: 560px;
+	height: 320px;
+}
+
+/*
+  ========================================
+  Menu links
+  ========================================
+*/
+li {
+	list-style-type: none;
+}
+
+#menu {
+	font-size: 26px;
+	font-weight: bold;
+	width: 100%;
+	height: 100px;
+	background-image: url('pics/menu3.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	vertical-align: center;
+	line-height: 100px;
+}
+
+/* unvisited link*/
+a:link {
+	color: #FAEBD7;
+	text-decoration: none;
+	padding: 0px 30px;
+    display: inline-block;
+}
+
+/* visited link */
+a:visited {
+    color: #FAEBD7;
+}
+
+/* mouse over link*/
+a:hover {
+    color: #FAEBD7;
+	text-decoration: underline;
+}
+
+/*
+  ========================================
+  Table
+  ========================================
+*/
+section.table {
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1210px;
+	height: auto;
+	border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #cecfd5;
+  padding: 10px 15px;
+  font-weight:normal;
+  text-align: center;
+}
+
+td.description {
+	text-align: left;
+}
+
+/*First row of the table*/
+thead {
+	background: #f0f0f2;
+}
+
+/* Table title*/
+caption {
+	text-align: left;
+}
+
+/*
+  ========================================================================================================================
+  ========================================================================================================================
+  Responsive design
+  ========================================================================================================================
+*/
+@media only screen and (min-width: 150px) and (max-width: 600px) {
+	html, body {
+		width: 100%;
+		height: 100%;
+	}
+	
+	header {
+		padding-bottom: 0;
+		margin-bottom: 1px;
+	}
+	
+	#logo {
+		margin-top: 0;
+		width: 15%;
+	}
+	
+	h1 { 
+		font-size: 1.7em;
+		margin-top: 0;
+	}
+	
+	div {
+		display: block;
+		vertical-align: none;
+	}
+	
+	div.intro_artc {
+		display: flex;
+	}
+	
+	div.references {
+		display: block;
+		width: 90%;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	
+	li {
+		border: 1px solid #fffbf8;
+	}
+	
+	#menu {
+		text-align: center;
+		font-size: 85%;
+		width: 80%;
+		height: auto;
+		background-image:none;
+		background-color: #4c4137;
+		color: inherit;
+		line-height: 20px;
+	}
+	
+	a:link {
+		padding: 5px 0;
+	}
+	
+	a.text_link:link {
+		max-width: 90%;
+	}
+	
+	#map {
+		max-width: 90%;
+		height: 300px;
+	}
+	
+	section.article {
+		width: 90%;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+	}
+	
+	section.intro_article {
+		width: 90%;
+	}
+	
+	section.intro_article_media {
+		width: 90%;
+		margin-top: 10px;
+	}
+	
+	p {
+		font-size: 80%;
+		/*margin-right: 0;*/
+	}
+	
+	.line_top, .line_bottom {
+		width: 90%;
+	}
+	
+	h6 {
+		max-width: 90%;
+		font-size: 60%;
+		text-align: center;
+		margin-top: 5px;
+	}
+	
+	.chart_desc {
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	img {
+		display: block;
+		max-width: 90%;
+	}
+	
+	caption {
+		font-size: 16px;
+	}
+
+	iframe {
+		width: 90%;
+		min-height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	table {
+		width: 90%;
+		font-size: 80%;
+	}
+	
+	footer {
+		max-width: 100%;
+		text-align:center;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 60%;
+	}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1270px) {
+	h1 { 
+		font-size: 2.5em;
+		margin-top: -10px;
+	}
+	
+	header {
+		padding-bottom: 1px;
+		margin-bottom: 0;
+	}
+	
+	#logo {
+		margin-top: 0;
+		width: 15%;
+		max-width: 120px;
+		border-radius: 50%;
+		border: 0.5px #4c4137 solid;
+	}
+	 
+	#menu {
+		display: flex;
+		font-size: 22px;
+		font-weight: bold;
+		width: 100%;
+		height: 50px;
+		background-image: url('pics/menu3.jpg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		line-height: 50px;
+		vertical-align: center;
+	}
+	
+	a:hover {
+		font-size: 100%;
+		text-decoration: underline;
+	}
+	
+	a:link {
+		color: #FAEBD7;
+		padding: 0 15px;
+	}
+	
+	.line_top, .line_bottom {
+		width: 90%;
+	}
+	
+	p {
+		font-size: 90%;
+		margin-right: 0;
+	}
+
+	div {
+		display: block;
+		vertical-align: none;
+	}
+	
+	div.intro_artc {
+		display: flex;
+	}
+	
+	div.references {
+		display: block;
+		width: 90%;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	
+	h6 {
+		/*max-width: 90%;*/
+		font-size: 75%;
+		text-align: center;
+		margin-top: 5px;
+	}
+
+	a.text_link:link {
+		max-width: 90%;
+	}
+
+	section.intro_article {
+		width: 90%;
+	}
+	
+	section.article {
+		width: 90%;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+	}
+	
+	#map {
+		width: 90%;
+		height: 510px;
+	}
+	
+	img {
+		display: block;
+		width: 90%;
+	}
+	
+	.photo {
+		width: 90%;
+	}
+	
+	.charts {
+		max-width: 560px;
+		height:auto;
+		margin-top: 20px;
+	}
+	
+	iframe {
+		width: 90%;
+		max-width: 560px;
+		max-height: 320px;
+		min-height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	
+	table {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 15px;
+		width: 90%;
+		border-collapse: collapse;
+	}
+	
+	footer {
+		max-width: 100%;
+		text-align:center;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 70%;
+	}
+}
